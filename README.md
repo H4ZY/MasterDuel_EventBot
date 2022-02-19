@@ -20,3 +20,9 @@ this button makes you skip all levels until you lose, then makes you start anoth
 
 ## Next update
 - I'm planning to make an interface
+
+
+### Credits 
+- [PyAutoGUI](https://github.com/asweigart/pyautogui)
+- [Termcolor](https://github.com/hfeeki/termcolor)
+- My Friend Faust to helpme
