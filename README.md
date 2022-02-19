@@ -15,7 +15,8 @@ this button makes you skip all levels until you lose, then makes you start anoth
 ## How to use
 - Donwload last release
 - Open game and configure to use bot
-- Go duel and open bot and minize bot.
+- Start the first duel in the event
+- turn on the bot
 
 
 ## Next update
