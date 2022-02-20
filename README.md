@@ -18,6 +18,10 @@ this button makes you skip all levels until you lose, then makes you start anoth
 - Start the first duel in the event
 - turn on the bot
 
+## Controlls
+- Hold "Q" to stop
+
+
 
 ## Next update
 - I'm planning to make an interface
