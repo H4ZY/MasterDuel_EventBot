@@ -1,5 +1,5 @@
-# MasterDuel Event Farm
-this button makes you skip all levels until you lose, then makes you start another duel to start a loop.
+# How it works 
+this bot makes skip all turns to losse duel, then makes you start another duel to start a loop.
 
 ## Features
 - Bot detects phases (it is not 100% guaranteed to be detected)
@@ -14,14 +14,12 @@ this button makes you skip all levels until you lose, then makes you start anoth
 
 ## How to use
 - Donwload last release
-- Open game and configure to use bot
+- Open game
 - Start the first duel in the event
 - turn on the bot
 
 ## Controlls
 - Hold "Q" to stop
-
-
 
 ## Next update
 - I'm planning to make an interface
@@ -29,7 +27,6 @@ this button makes you skip all levels until you lose, then makes you start anoth
 ## Video
 
 - [Youtube](https://youtu.be/M7hQ7dYJHQI)
-
 
 ### Credits 
 - [PyAutoGUI](https://github.com/asweigart/pyautogui)
