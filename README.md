@@ -1,3 +1,6 @@
+# N/R Rarity Festival
+Bot still works on new event
+
 # How it works 
 this bot makes skip all turns to losse duel, then makes you start another duel to start a loop.
 
