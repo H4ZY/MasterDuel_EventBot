@@ -1,6 +1,7 @@
 ## Compatibility 
-Works only in events 
-current event = **N/R Rarity Festival**
+Works only in events
+>current event = **N/R Rarity Festival**
+
 
 ## Safe for use ?
  yes it is completely safe to use, the bot will just automate your mouse actions
