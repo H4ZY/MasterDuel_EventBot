@@ -1,3 +1,5 @@
+this bot's objective is to make you lose by passing the turns like this by farming the event with defeat points without having to play the event
+
 ## Compatibility 
 Works only in events
 >current event = **N/R Rarity Festival**
@@ -9,6 +11,8 @@ Works only in events
 ## How it works 
 this bot is all the time looking for points on the screen with specific colors
 when it finds the color it starts an action
+
+
 ![](https://imgur.com/I53iItM.png)
 
 ## How to configure 
