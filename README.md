@@ -1,31 +1,20 @@
-# N/R Rarity Festival
-Bot still works on new event
+## Compatibility 
+Works only in events 
+current event = **N/R Rarity Festival**
 
-# How it works 
-this bot makes skip all turns to losse duel, then makes you start another duel to start a loop.
+## Safe for use ?
+ yes it is completely safe to use, the bot will just automate your mouse actions
 
-## Features
-- Bot detects phases (it is not 100% guaranteed to be detected)
-- discard cards
-- skip all windows to start another duel
+## How it works 
+this bot is all the time looking for points on the screen with specific colors
+when it finds the color it starts an action
+![](https://imgur.com/I53iItM.png)
 
-## Requirements
-- Run game in fullscreen (if your game is not in fullscreen use shortcut ALT+ENTER)
-- Resolution 1920x1080
-- Use high resoltuion for textures
-- Use normal monster deck ONLY
+## How to configure 
+![](https://i.imgur.com/YewxYOE.png)
 
-## How to use
-- Donwload last release
-- Open game
-- Start the first duel in the event
-- turn on the bot
-
-## Controlls
+## Commands / Shortcuts
 - Hold "Q" to stop
-
-## Next update
-- I'm planning to make an interface
 
 ## Video
 
