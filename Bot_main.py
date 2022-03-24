@@ -1,7 +1,7 @@
 import pyautogui
 import keyboard
 import time
-#from termcolor import colored
+from termcolor import colored
 from datetime import datetime
 
 
@@ -109,10 +109,9 @@ def screen_duelresults():
     if pyautogui.pixelMatchesColor(42, 61, (48, 48, 48)):
         #print(colored('[LOG]', 'yellow'), colored('skipping Duel Results', 'magenta'))
         print((current_time), ('[LOG] skipping Duel Results'))       
+        time.sleep(5)
+        click_event(938, 639)  
         time.sleep(2)
-        pyautogui.moveTo(100, 100)
-        pyautogui.click(button='right')
-        time.sleep(1)
         click_event(1703, 976)
         time.sleep(4)
         pyautogui.moveTo(1900, 10)
@@ -195,6 +194,16 @@ def coin():
     else:
         botao_azul()
 
+def errorserver():
+    
+    if pyautogui.pixelMatchesColor(928, 423, (237, 0, 74)):
+        print((current_time), ('[LOG] Error Server'))
+        time.sleep(1)
+        click_event(971, 652)
+    else:
+        button_duel()
+
+
 while keyboard.is_pressed('q') == False:
 
     draw_card()
@@ -210,3 +219,4 @@ while keyboard.is_pressed('q') == False:
     card_01()
     card_02()
     coin()
+    errorserver()
