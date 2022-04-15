@@ -1,3 +1,4 @@
+from typing import Counter
 import pyautogui
 import keyboard
 import time
@@ -9,6 +10,8 @@ from datetime import datetime
 now = datetime.now()
 
 current_time = now.strftime("%H:%M:%S")
+
+
 
 def click_event(x, y):
     
@@ -32,7 +35,7 @@ def draw_card():
         click_event(1900, 480)
 
 
-def botao_azul():
+def player_button():
 
     if pyautogui.pixelMatchesColor(1480, 439, (80, 147, 147)):
         #print(colored('[LOG]', 'yellow'), colored('Player Phase', 'blue'))
@@ -47,7 +50,7 @@ def botao_azul():
         #print(colored('[LOG]', 'yellow'), colored('skipped phase...', 'blue')) 
         print((current_time), ('[LOG] skipped phase...'))
         if pyautogui.pixelMatchesColor(965, 507, (62, 92, 127)):
-            botao_azul()
+            player_button()
            
         else:
             time.sleep(1)
@@ -67,16 +70,20 @@ def discart_card():
         #print(colored('[LOG]', 'yellow'), colored('discarded card', 'blue'))
         print((current_time), ('[LOG] Discarded card...'))
 
-def botao_vermelho():
+def enemy_button():
     
     if pyautogui.pixelMatchesColor(1510, 439, (151, 22, 17)):
+    
         #print(colored('[LOG]', 'yellow'), colored('Enemy turn', 'red'))
         print((current_time), ('[LOG] Enemy turn'))
+
+
         #print(colored('[LOG]', 'yellow'), colored('Wait...', 'red'))
         print((current_time), ('[LOG] Wait...'))
         time.sleep(5)
     else:
-        botao_azul()
+        player_button()
+
 
 
 def screen_defeat():
@@ -86,8 +93,14 @@ def screen_defeat():
         print((current_time), ('[LOG] Defeat screen'))
         time.sleep(2)
         click_event(964, 971)
+
+        #counter = 0
+       # while True:
+           # counter += 1
+           # print("TESTE COUNT", counter)
+           # break
     else:
-        botao_azul()
+        player_button()
 
 
 def screen_duelpass():
@@ -114,9 +127,21 @@ def screen_duelresults():
         time.sleep(2)
         click_event(1703, 976)
         time.sleep(4)
+        click_event(807, 629)  
+        time.sleep(2)
         pyautogui.moveTo(1900, 10)
         pyautogui.click(button='right')
 
+        #807, 629 203, 253, 0
+
+def wincondition():
+    
+    if pyautogui.pixelMatchesColor(502, 479, (0, 79, 143)):
+        print((current_time), ('[LOG] skipping Win Condition'))
+        time.sleep(1)
+        click_event(971, 652)
+    else:
+        button_duel()    
 
 def button_duel():
     
@@ -140,7 +165,7 @@ def window_nocard():
         time.sleep(1)
         click_event(964, 589)
     else:
-        botao_azul()
+        player_button()
 
 def window_enemy_card():
     
@@ -152,7 +177,7 @@ def window_enemy_card():
         time.sleep(1)
         click_event(962, 1011) #Ok Button
     else:
-        botao_azul()
+        player_button()
 
 
 def card_01():
@@ -168,7 +193,7 @@ def card_01():
         click_event(963, 1015)
         time.sleep(2)
     else:
-        botao_azul()
+        player_button()
 
 
 def card_02():
@@ -181,7 +206,7 @@ def card_02():
         time.sleep(2)
         click_event(966, 1024)
     else:
-        botao_azul()
+        player_button()
 
 
 def coin():
@@ -192,7 +217,7 @@ def coin():
         time.sleep(1)
         click_event(767, 839)
     else:
-        botao_azul()
+        player_button()
 
 def errorserver():
     
@@ -204,12 +229,13 @@ def errorserver():
         button_duel()
 
 
+
 while keyboard.is_pressed('q') == False:
 
     draw_card()
-    botao_azul()
+    player_button()
     discart_card()
-    botao_vermelho()
+    enemy_button()
     screen_defeat()
     screen_duelpass()
     screen_duelresults
@@ -220,3 +246,4 @@ while keyboard.is_pressed('q') == False:
     card_02()
     coin()
     errorserver()
+    wincondition()
