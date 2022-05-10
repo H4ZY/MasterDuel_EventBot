@@ -2,7 +2,7 @@ this bot's objective is to make you lose by passing the turns like this by farmi
 
 ## Compatibility 
 Works only in events
->current event = **Synchro Festival**
+>current event = **Fusion Festival**
 
 
 ## Safe for use ?
