@@ -88,17 +88,12 @@ def enemy_button():
 
 def screen_defeat():
     
-    if pyautogui.pixelMatchesColor(1418, 791, (223, 12, 62)):
+    if pyautogui.pixelMatchesColor(899, 828, (253, 253, 251)):
         #print(colored('[LOG]', 'yellow'), colored('Defeat screen', 'magenta'))
         print((current_time), ('[LOG] Defeat screen'))
         time.sleep(2)
         click_event(964, 971)
 
-        #counter = 0
-       # while True:
-           # counter += 1
-           # print("TESTE COUNT", counter)
-           # break
     else:
         player_button()
 
@@ -143,16 +138,17 @@ def wincondition():
     else:
         button_duel()    
 
+
 def button_duel():
     
-    if pyautogui.pixelMatchesColor(1288, 854, (203, 253, 0)):
+    if pyautogui.pixelMatchesColor(1160, 230, (14, 53, 0)):
         #print(colored('[LOG]', 'yellow'), colored('Start Another Duel', 'magenta'))
         print((current_time), ('[LOG] Start Another Duel'))
-        time.sleep(2)
+        time.sleep(4)
         click_event(964, 788 )
-        time.sleep(2)
+        time.sleep(4)
         click_event(1590, 517)
-        time.sleep(1)
+        time.sleep(4)
         click_event(1480, 870)
 
 
