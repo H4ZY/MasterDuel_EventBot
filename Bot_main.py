@@ -226,6 +226,25 @@ def errorserver():
 
 
 
+def stuck1():
+    
+    if pyautogui.pixelMatchesColor(1107, 698, (0, 0, 0)):
+        print((current_time), ('[LOG] Unstuck'))
+        time.sleep(1)
+        click_event(1716, 985)
+    else:
+        player_button()
+
+
+def stuck2():
+    
+    if pyautogui.pixelMatchesColor(1417, 222, (165, 165, 163)):
+        print((current_time), ('[LOG] Unstuck'))
+        time.sleep(1)
+        click_event(952, 784)
+    else:
+        player_button()
+
 while keyboard.is_pressed('q') == False:
 
     draw_card()
@@ -243,3 +262,5 @@ while keyboard.is_pressed('q') == False:
     coin()
     errorserver()
     wincondition()
+    stuck1()
+    stuck2()
